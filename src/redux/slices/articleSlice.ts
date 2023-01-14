@@ -32,5 +32,7 @@ const articleSlice = createSlice({
   },
 });
 
-export const { setArticles } = articleSlice.actions
-export const arcticleReducer = articleSlice.reducer 
+export const { setArticles } = articleSlice.actions;
+export const arcticleReducer = articleSlice.reducer;
+
+export { type IArticle };
