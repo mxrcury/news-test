@@ -16,23 +16,29 @@ interface IArticle {
 
 interface IArticlesInitialState {
   articleList: Array<IArticle>;
+  articlesQty: number;
 }
 
 const initialState: IArticlesInitialState = {
   articleList: [],
+  articlesQty: 0,
 };
 
 const articleSlice = createSlice({
   name: "arcticle",
   initialState,
   reducers: {
-    setArticles: (state, action: PayloadAction<IArticle[]>) => {
+    setArticles: (state: IArticlesInitialState, action: PayloadAction<IArticle[]>) => {
       state.articleList = action.payload;
+      state.articlesQty = action.payload.length;
+    },
+    setArticleQty: (state: IArticlesInitialState, action: PayloadAction<number>) => {
+      state.articlesQty = action.payload;
     },
   },
 });
 
-export const { setArticles } = articleSlice.actions;
-export const arcticleReducer = articleSlice.reducer;
+export const { setArticles, setArticleQty } = articleSlice.actions;
+export const articleReducer = articleSlice.reducer;
 
 export { type IArticle };

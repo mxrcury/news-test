@@ -13,6 +13,10 @@
 .calendarIcon {
   margin-bottom: 2px;
 }
+.articleImage {
+  height: 217px;
+  object-fit: cover;
+}
 .articleTitle {
   font-style: normal;
   font-weight: 400;
@@ -27,4 +31,16 @@
   font-size: 16px;
   line-height: 150%;
   color: #363636;
+}
+.buttonMore {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: normal;
+  text-transform: lowercase;
+  &:first-letter {
+    text-transform: capitalize;
+  }
+  line-height: 150%;
+  color: #363636;
+  margin-right: 6px;
 }

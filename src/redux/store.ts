@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { arcticleReducer } from "./slices/articleSlice";
+import { articleReducer } from "./slices/articleSlice";
 
 const store = configureStore({
   reducer: {
-    article: arcticleReducer,
+    article: articleReducer,
   },
 });
 
