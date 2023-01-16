@@ -30,7 +30,7 @@ const ArticleCard = ({ article, search }: ArticlePropsType): JSX.Element => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button to={`/article/${article.id}`} component={Link} size="small">
+        <Button to={`/news-test/article/${article.id}`} component={Link} size="small">
           <span className={styles.buttonMore}>Read more</span>
           <img src={ArrowMoreIcon} alt="More" />
         </Button>
