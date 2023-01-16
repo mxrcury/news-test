@@ -14,7 +14,7 @@ const Article = (): JSX.Element => {
         <Container maxWidth="lg" className={styles.articleContent}>
           <h2 className={styles.articleTitle}>{currentArticle.title}</h2>
           <p className={styles.articleText}>{currentArticle.summary}</p>
-          <Button to="/" component={Link} variant="text">
+          <Button to="/news-test/" component={Link} variant="text">
             <div className={styles.backButtonContainer}>
               <img src={ArrowBackIcon} alt="Back" className={styles.arrowBackIcon} />
               <span className={styles.buttonMore}>Back to homepage</span>
